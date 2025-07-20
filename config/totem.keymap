@@ -101,7 +101,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q                &kp W          &kp W           &kp R               &kp T          &kp Y        &kp U                        &kp I           &kp O          &kp P
+                &kp Q                &kp W          &kp E           &kp R               &kp T          &kp Y        &kp U                        &kp I           &kp O          &kp P
                 &HMR_L LEFT_SHIFT A  &HMR_L LGUI S  &HMR_L LCTRL D  &HMR_L LALT F       &kp G          &kp H        &HMR_L LALT J                &HMR_L RCTRL K  &HMR_R RGUI L  &HMR_R RSHFT SEMICOLON
 &kp LEFT_SHIFT  &kp Z                &kp X          &kp C           &kp V               &kp B          &kp N        &kp M                        &kp COMMA       &kp DOT        &kp FSLH                &kp RSHIFT
                                                     &none           &mt LEFT_SHIFT TAB  &lt 1 SPACE    &lt 2 ENTER  &mt RIGHT_ALT LC(BACKSPACE)  &none
