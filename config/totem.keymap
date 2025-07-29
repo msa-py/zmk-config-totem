@@ -47,6 +47,16 @@
             bindings = <&kp PRINTSCREEN>;
             key-positions = <22 23 24>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <16 17 18>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <10 11>;
+        };
     };
 
     behaviors {
@@ -101,10 +111,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q                &kp W          &kp E           &kp R               &kp T          &kp Y        &kp U                        &kp I           &kp O          &kp P
-                &HMR_L LEFT_SHIFT A  &HMR_L LGUI S  &HMR_L LCTRL D  &HMR_L LALT F       &kp G          &kp H        &HMR_L LALT J                &HMR_L RCTRL K  &HMR_R RGUI L  &HMR_R RSHFT SEMICOLON
-&kp LEFT_SHIFT  &kp Z                &kp X          &kp C           &kp V               &kp B          &kp N        &kp M                        &kp COMMA       &kp DOT        &kp FSLH                &kp RSHIFT
-                                                    &none           &mt LEFT_SHIFT TAB  &lt 1 SPACE    &lt 2 ENTER  &mt RIGHT_ALT LC(BACKSPACE)  &none
+                &kp Q          &kp W              &kp E           &kp R                &kp T        &kp Y        &kp U                    &kp I           &kp O          &kp P
+                &HMR_L LGUI A  &HMR_L LEFT_ALT S  &HMR_L LCTRL D  &HMR_L LEFT_SHIFT F  &kp G        &kp H        &HMR_L RSHIFT J          &HMR_L RCTRL K  &HMR_R LALT L  &HMR_R RIGHT_META SEMICOLON
+&kp LEFT_SHIFT  &kp Z          &kp X              &kp C           &kp V                &kp B        &kp N        &kp M                    &kp COMMA       &kp DOT        &kp FSLH                     &kp RSHIFT
+                                                  &none           &kp LEFT_SHIFT       &lt 1 TAB    &lt 2 SPACE  &mt RIGHT_ALT BACKSPACE  &none
             >;
         };
 
@@ -127,10 +137,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans    &kp DEL          &kp KP_N7                    &kp KP_N8                 &kp KP_N9                &kp BSPC
-        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans    &kp KP_SLASH     &HMR_R LEFT_ALT KP_NUMBER_4  &HMR_R RCTRL KP_NUMBER_5  &HMR_R RGUI KP_NUMBER_6  &HMR_R RSHFT KP_MINUS
-&trans  &trans    &trans     &trans     &trans     &trans    &kp KP_MULTIPLY  &kp KP_N1                    &kp KP_N2                 &kp KP_N3                &kp KP_PLUS            &trans
-                             &trans     &trans     &trans    &trans           &trans                       &trans
+        &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans    &kp DEL          &kp KP_N7                 &kp KP_N8                 &kp KP_N9                &kp BSPC
+        &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans    &kp KP_SLASH     &HMR_R RSHFT KP_NUMBER_4  &HMR_R RCTRL KP_NUMBER_5  &HMR_R LALT KP_NUMBER_6  &HMR_R RIGHT_GUI KP_MINUS
+&trans  &trans    &trans     &trans     &trans     &trans    &kp KP_MULTIPLY  &kp KP_N1                 &kp KP_N2                 &kp KP_N3                &kp KP_PLUS                &trans
+                             &trans     &trans     &trans    &trans           &kp DELETE                &trans
             >;
         };
 
@@ -153,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp F1                 &kp F2                &kp F3                 &kp F4                &kp F5     &kp F6   &kp F7                &kp F8           &kp F9          &kp F10
-        &HMR_L LSHFT NUMBER_1  &HMR_L LGUI NUMBER_2  &HMR_L LCTRL NUMBER_3  &HMR_L LALT NUMBER_4  &kp N5     &kp N6   &HMR_R LALT NUMBER_7  &HMR_R RCTRL N8  &HMR_R RGUI N9  &HMR_R RSHFT N0
-&trans  &kp F11                &kp F12               &kp F13                &kp F14               &kp F15    &kp F16  &kp F17               &kp F18          &kp F19         &kp F20          &trans
-                                                     &trans                 &trans                &mo 3      &trans   &trans                &trans
+        &kp F1                 &kp F2                &kp F3                 &kp F4                 &kp F5     &kp F6   &kp F7                 &kp F8           &kp F9              &kp F10
+        &HMR_L LMETA NUMBER_1  &HMR_L LALT NUMBER_2  &HMR_L LCTRL NUMBER_3  &HMR_L LSHFT NUMBER_4  &kp N5     &kp N6   &HMR_R RSHFT NUMBER_7  &HMR_R RCTRL N8  &HMR_R LEFT_ALT N9  &HMR_R RIGHT_GUI N0
+&trans  &kp F11                &kp F12               &kp F13                &kp F14                &kp F15    &kp F16  &kp F17                &kp F18          &kp F19             &kp F20              &trans
+                                                     &trans                 &trans                 &mo 3      &trans   &trans                 &trans
             >;
         };
 
